@@ -46,13 +46,35 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine learning, deep learning, and image processing. I have been mostly working on video representation learning including spatio-temporal attention mechanisms, cross-modal attention mechanisms, cross-modal knowledge distillation, and self-supervised learning for applications like action classification in trimmed videos, temporal action detection in untrimmed videos, video retrieval, anaomaly detection, and deepfake detection. Representative papers are <span class="highlight">highlighted</span>.
+                I'm interested in computer vision, machine learning, deep learning, and image processing. I have been mostly working on video representation learning including spatio-temporal attention mechanisms, cross-modal attention mechanisms, cross-modal knowledge distillation, and self-supervised learning for applications like action classification in trimmed videos, temporal action detection in untrimmed videos, video retrieval, anaomaly detection, and deepfake detection.
               </p>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>News</heading>
+              <p style="margin-left: 40px">
+              <ul>
+                <li><b>Dec 2021</b> - We (Abhijit Das (Thapar Univ., India), Babak Taati (Univ. Toronto, Canada), Antitza Dantcheva (Inria, France), Diego Guarin (Florida Institute of Tehnology, USA), <strong>Srijan Das</strong> (Stony Brook Univ., USA), Andrea Bandini (Univ. Toronto, Canada), Hu Han (ICT, CAS, China), Yana Yunusovva (Univ. Toronto, Canada), Francois Bremond (Inria, France), Xilin Chen (ICT, CAS, China) have organized a special session on Applications in Healthcare and Health Monitoring at the 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG'21). </li>
+                <li><b>Dec 2021</b> - Two papers on DeepFake detection and Video Anomaly detection are presented in FG 2021. </li>
+                <li><b>Nov 2021</b> - One paper on Video Anomaly Detection is presented in AVSS 2021.</li>
+                <li><b>Nov 2021</b> - One paper accepted to TPAMI</li>
+                <li><b>Oct 2021</b> - One paper accepted to BMVC 2021 as oral presentation</li>
+                <li><b>Jul 2021</b> - One Paper accepted at ICCV2021</li>
+                <li><b>Apr 2021</b> - Joined Stony Brook University as a Postdoctoral Associate</li>
+                <li><b>Nov 2020</b> - Session chair for Image Understanding & Activity Recognition session at <a href='https://ipas.ieee.tn/'><strong>IPAS 2020</strong></a>.</li>
+
+              </ul>
+              </p>
+            </td>
+          </tr>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <heading>Publications</heading> (List of selected publications)
         <tr onmouseout="viewclr_stop()" onmouseover="viewclr_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -109,6 +131,7 @@
               <br>
               <em>Arxiv Pre-print</em>, December 2021
               <br>
+              <a href="https://arxiv.org/abs/2112.03905">arXiv</a>
               <p> A ConvTransformer network that explores global and local temporal relations at multiple resolutions.</p>
             </td>
           </tr>
@@ -137,7 +160,7 @@
               <br>
               <strong>Srijan Das</strong>, Rui Dai, Di Yang, Francois Bremond,
               <br>
-							<em>TPAMI</em>, 2021 (DOI: 10.1109/TPAMI.2021.3127885)
+							<em><strong>TPAMI</strong></em>, 2021
               <br>
               <a href="https://arxiv.org/abs/2105.08141">arXiv</a>
               /
@@ -175,8 +198,33 @@
             </td>
           </tr>
 
-
-					
+          <tr onmouseout="iccv21_stop()" onmouseover="iccv21_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='image/dist_actdet.png' height=135px width=185px>
+              </div>
+              <script type="text/javascript">
+                function iccv21_start() {
+                  document.getElementById('vpnp_image').style.opacity = "1";
+                }
+                function iccv21_stop() {
+                  document.getElementById('vpnp_image').style.opacity = "0";
+                }
+                tsu_stop()
+              </script>
+           </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+               <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Dai_Learning_an_Augmented_RGB_Representation_With_Cross-Modal_Knowledge_Distillation_for_ICCV_2021_paper.html">
+                     <papertitle>Learning an Augmented RGB Representation with Cross-Modal Knowledge Distillation for Action Detection</papertitle>
+               </a>
+              <br>
+              Rui Dai, <strong>Srijan Das</strong>, Francois Bremond.
+              <br>
+              <em> <!--IEEE/CVF International Conference on Computer Vision, 2021. -->
+                <strong>ICCV 2021</strong>
+              <br>
+            </td>
+          </tr>
 
           <tr onmouseout="pdan_stop()" onmouseover="pdan_start()">
             <td style="padding:20px;width:25%;vertical-align:middle";"text-align: center">
@@ -238,7 +286,36 @@
             </td>
           </tr>
 	
+        <tr onmouseout="sta_stop()" onmouseover="sta_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/STA_fig.png' height=145px width=185px>
+              </div>
+              <script type="text/javascript">
+                function stego_start() {
+                  document.getElementById('sta_image').style.opacity = "1";
+                }
 
+                function stego_stop() {
+                  document.getElementById('sta_image').style.opacity = "0";
+                }
+                stego_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Das_Toyota_Smarthome_Real-World_Activities_of_Daily_Living_ICCV_2019_paper.pdf">
+                <papertitle>Toyota Smarthome: Real World Activities of Daily Living.</papertitle>
+              </a>
+              <br>
+              <strong>Srijan Das</strong>, Rui Dai, Michal Koperski, Luca Minciullo, Lorenzo Garattoni, Francois Bremond and Gianpiero Francesca.
+              <br>
+              <em><!--In Proceedings of the 17th International Conference on Computer Vision</em>, 2019.-->
+                <strong>ICCV 2019</strong>
+              <br>
+              <br>
+              <a href="https://project.inria.fr/toyotasmarthome/">Project Link</a> / <a href="https://github.com/DAIGroup/separable_STA">Code</a>
+            </td>
+          </tr>
 					
 
 
