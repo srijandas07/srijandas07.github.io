@@ -77,6 +77,37 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><p>
         <heading>Selected Publications</heading> (For full list of papers, visit my <a href="https://scholar.google.com/citations?user=ZDTF5AEAAAAJ">Google Scholar</a>.)
         <p>
+          <tr onmouseout="cdnet_stop()" onmouseover="cdnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/cdnet.png' height=140px width=185px>
+              </div>
+              <script type="text/javascript">
+                function cdnet_start() {
+                  document.getElementById('CDNET').style.opacity = "1";
+                }
+                function cdnet_stop() {
+                  document.getElementById('CDNET').style.opacity = "0";
+                }
+                mstct_stop()
+              </script>
+           </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+               <a href="https://arxiv.org/pdf/2203.15078.pdf">
+                     <papertitle>CD-Net: Histopathology Representation Learning using Pyramidal Context-Detail Network</papertitle>
+               </a>
+              <br>
+              Saarthak Kapse, <strong>Srijan Das</strong>, Prateek Prasanna.
+              <br>
+              <em>Arxiv Pre-print, March 2022</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2203.15078">arXiv</a>
+               /
+              <a href="https://github.com/bmi-imaginelab/CD-Net">code</a>
+              <p> A transformer based Pyramidal Context-Detail Network that leverages complementary information from multiple resolutions in Whole slide images.</p>
+            </td>
+          </tr>
+
         <tr onmouseout="viewclr_stop()" onmouseover="viewclr_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -142,7 +173,7 @@
         <tr onmouseout="mstct_stop()" onmouseover="mstct_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/mstct.png' height=140px width=185px>
+                <img src='images/ms-tct.gif' height=140px width=185px>
               </div>
               <script type="text/javascript">
                 function mstct_start() {
@@ -163,7 +194,9 @@
               <br>
               <em>To Appear in CVPR 2022</em>
               <br>
-              <a href="https://arxiv.org/abs/2112.03905">arXiv</a>
+              <a href="https://arxiv.org/abs/2112.03902">arXiv</a>
+               /
+              <a href="https://github.com/dairui01/MS-TCT">code</a>
               <p> A ConvTransformer network that explores global and local temporal relations at multiple resolutions.</p>
             </td>
           </tr>
