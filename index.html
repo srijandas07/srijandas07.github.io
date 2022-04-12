@@ -58,6 +58,8 @@
               <heading>News</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b>Apr 2022</b> - I will join <strong>UNC Charlotte</strong> as an <strong>Assistant Professor</strong> in August 2022!</li>
+                <li><b>Apr 2022</b> - Toyota Smarthome Untrimmed (TSU) has been accepted to TPAMI.</li>
                 <li><b>Mar 2022</b> - One Paper accepted to CVPR 2022.</li>
                 <li><b>Dec 2021</b> - We have organized a special session on <a href='http://iab-rubric.org/fg2021/session.html'>Applications in Healthcare and Health Monitoring</a> at the 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG'21). </li>
                 <li><b>Dec 2021</b> - Two papers on DeepFake detection and Video Anomaly detection at FG 2021. </li>
@@ -77,6 +79,37 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><p>
         <heading>Selected Publications</heading> (For full list of papers, visit my <a href="https://scholar.google.com/citations?user=ZDTF5AEAAAAJ">Google Scholar</a>.)
         <p>
+          <tr onmouseout="tsu_stop()" onmouseover="tsu_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='tsu_image'><img src='imagesTSU/TSU_fig.png' height=145px width=185px></div>
+                <img src='images/TSU_fig.png' height=145px width=185px>
+              </div>
+              <script type="text/javascript">
+                function tsu_start() {
+                  document.getElementById('tsu_image').style.opacity = "1";
+                }
+                function tsu_stop() {
+                  document.getElementById('tsu_image').style.opacity = "0";
+                }
+                tsu_stop()
+              </script>
+           </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+               <a href="https://arxiv.org/abs/2010.14982">
+                     <papertitle>Toyota Smarthome Untrimmed: Real-World Untrimmed Videos for Activity Detection</papertitle>
+               </a>
+              <br>
+              Rui Dai, <strong>Srijan Das</strong>, Saurav Sharma, Luca Minciullo, Lorenzo Garattoni, François Brémond, Gianpiero Francesca.
+              <br>
+              <em><strong>T-PAMI</strong></em>
+              <br>
+              <br>
+              <a href="https://project.inria.fr/toyotasmarthome/">Project Link</a> / <a href="https://github.com/dairui01/TSU_evaluation">Code</a>
+              <p> TSU is a new untrimmed daily-living dataset consisting of 51 activities performed in a spontaneous manner, capture from non-optimal viewpoints.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="cdnet_stop()" onmouseover="cdnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
