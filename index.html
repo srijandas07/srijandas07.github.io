@@ -90,15 +90,27 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Lab members</heading>
+                <style>
+              .lab-member {
+                font-size: 1em; /* change the font size to your desired size */
+                text-decoration: underline; /* add an underline */
+                }
+            </style>
               <p style="margin-left: 40px">
               <ul>
+            <subheading class="lab-member">Current Students</subheading>
 
                 <li><em><a href="https://dominickrei.github.io/">Dominick Reilly</a> (PhD student at UNC Charlotte) </em>
-                <li><em>Ian Boyle (undergraduate at UNC Charlotte) </em>
                 <li><em>Jonathan Lorray (Master student at UNC Charlotte) </em>
                 <li><em>Vishal Bondili (Master student at UNC Charlotte) </em>
                 <li><em>Jacob Nielsen (jointly supervising Master Thesis with Prof. Aritra Dutta at SDU)</em>
               </ul>
+                <subheading class="lab-member">Current Students</subheading>
+
+                    <li><em>Ian Boyle (undergraduate at UNC Charlotte), 2022-23 </em>
+                    <li><em>Tanmay Jain (intern from DTU, India), 2022-23 </em>
+                    <li><em>Soumyajit Karmakar (intern from IIIT Guwahati, India), 2022-23 </em>
+                    <li><em>Shyam Marjit (intern from IIIT Guwahati, India), 2022-23 </em>
               </p>
             </td>
           </tr>
@@ -118,6 +130,98 @@
           </td>
           </tr>
         <p>
+            <tr onmouseout="paat_stop()" onmouseover="paat_start()" bgcolor="#ffffd0">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/paat.png' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function paat_start() {
+                  document.getElementById('paat').style.opacity = "1";
+                }
+
+                function rawnerf_stop() {
+                  document.getElementById('paat_image').style.opacity = "0";
+                }
+                paat_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2306.09331.pdf">
+                <papertitle>Seeing the Pose in the Pixels: Learning Pose-Aware Representations in Vision Transformers</papertitle>
+              </a>
+              <br>
+              Dominick Reilly, Aman Chadha, <strong>Srijan Das</strong>.
+              <br>
+							<em>Preprint</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2306.09331.pdf">arXiv</a>
+                /
+              <a href="https://github.com/dominickrei/PoseAwareVT">code</a>
+              <p></p>
+              <p>
+							Two approaches for training ViTs to learn Pose-aware representations, enabling fine-grained and viewpoint-agnostic visual perception.</p>
+            </td>
+          </tr>
+            <tr onmouseout="dirl_stop()" onmouseover="dirl_start()">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/dirl.png' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function dirl_start() {
+                  document.getElementById('DIRL').style.opacity = "1";
+                }
+                function cdnet_stop() {
+                  document.getElementById('DIRL').style.opacity = "0";
+                }
+                dirl_stop()
+              </script>
+           </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+               <a href="https://openreview.net/pdf?id=SUcUqu_X30">
+                     <papertitle>Attention de-sparsification Matters: Inducing Diversity in Digital Pathology Representation Learning</papertitle>
+               </a>
+              <br>
+              Saarthak Kapse, <strong>Srijan Das</strong>, Jingwei Zhang, Rajarsi R. Gupta, Joel Saltz, Dimitris Samaras, Prateek Prasanna.
+              <br>
+                <em>Preprint</em>
+              <br>
+              <a href="https://openreview.net/pdf?id=SUcUqu_X30">OpenReview</a>
+               /
+              code (coming soon)
+              <p> </p>
+            </td>
+          </tr>
+
+            <tr onmouseout="stc_stop()" onmouseover="stc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/stc-mix.png' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function stc20_start() {
+                  document.getElementById('wstc_image').style.opacity = "1";
+                }
+                function stc_stop() {
+                  document.getElementById('stc_image').style.opacity = "0";
+                }
+                stc_stop()
+              </script>
+           </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+               <a href="https://arxiv.org/abs/2112.03906">
+                     <papertitle>Cross-modal Manifold Cutmix for Self-supervised Video Representation Learning</papertitle>
+               </a>
+              <br>
+              <strong>Srijan Das</strong> and Michael S. Ryoo.
+              <br>
+							<em>18th International Conference on Machine Vision Applications </em>, July 2023
+              <br>
+              <a href="https://arxiv.org/abs/2112.03906">arXiv</a>
+              <p> This paper focuses on designing video augmentation for self-supervised learning, we propose CMMC to make use of other modalities in videos for data mixing.</p>
+            </td>
+          </tr>
             <tr onmouseout="cdnet_stop()" onmouseover="cdnet_start()">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -212,6 +316,8 @@
               <em><strong>NeurIPS 2022</strong></em>
               <br>
               <a href="https://arxiv.org/abs/2206.05266">arXiv</a>
+                /
+              <a href="https://github.com/LostXine/elo-sac">code</a>
               <p> The impacts of the existing self-supervised losses with  Joint Learning framework for RL is limited, while there is no golden method that can dominate all tasks. </p>
             </td>
           </tr>
@@ -243,6 +349,8 @@
               <a href="https://arxiv.org/pdf/2206.11895.pdf">arXiv</a>
                /
               <a href="https://www3.cs.stonybrook.edu/~jishang/3dtrl/3dtrl.html">Project Page</a>
+                /
+              <a href="https://github.com/elicassion/3DTRL">code</a>
               <p> 3DTRL is a light-weighted, plug-and play layer that recovers 3D information of visual tokens and leverages it for learning viewpoint-agnostic representations.</p>
             </td>
           </tr>
@@ -313,35 +421,7 @@
           <br><subheading class="pub-year">2021</subheading>
         </td>
         </tr>
-          <tr onmouseout="stc_stop()" onmouseover="stc_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/stc-mix.png' height=175px width=250px>
-              </div>
-              <script type="text/javascript">
-                function stc20_start() {
-                  document.getElementById('wstc_image').style.opacity = "1";
-                }
-                function stc_stop() {
-                  document.getElementById('stc_image').style.opacity = "0";
-                }
-                stc_stop()
-              </script>
-           </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-               <a href="https://arxiv.org/abs/2112.03906">
-                     <papertitle>STC-mix: Space, Time, Channel mixing for Self-supervised Video Representation</papertitle>
-               </a>
-              <br>
-              <strong>Srijan Das</strong> and Michael S. Ryoo.
-              <br>
-							<em>Arxiv Pre-print</em>, December 2021
-              <br>
-              <a href="https://arxiv.org/abs/2112.03906">arXiv</a>
-              <p> This paper focuses on designing video augmentation for self-supervised learning, we
-                analyze the best strategy to mix videos to create a new augmented video sample. We also propose CMMC to make use of other modalities in videos for data mixing.</p>
-            </td>
-          </tr>
+
           <tr onmouseout="vpn++_stop()" onmouseover="vpn++_start()"  bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -593,6 +673,7 @@
               <heading>Talks</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b><em>Jun 2023</em></b> &nbsp;&nbsp; Invited Talk on "Computer Vision for Robot Learning" as part of the "AI and Machine Vision for Robotics" short-term training program at IIITDM. (Virtually)  </li>
                 <li><b><em>Apr 2023</em></b> &nbsp;&nbsp; Talk on "From Few to More: Enhancing ViT Performance on Limited Data" at PHPC Lab in UNC Charlotte.  </li>
                 <li><b><em>Mar 2023</em></b> &nbsp;&nbsp; Talk on "From Pixels to Robots: Recipes for Vision-Enabled Robot Learning" at the Seminar on Controls and Robotics in UNC Charlotte.  </li>
                 <li><b><em>Jan 2023</em></b> &nbsp;&nbsp; Talk on "Quo vadis, computer vision!" at the PhD seminar in UNC Charlotte.  </li>
@@ -643,6 +724,9 @@
               <heading>Academic Activities</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li>Program committee member of AAAI-24 Student Program.</li>
+                <li>Area Chair for AVSS 2023.</li>
+                <li>Member of DEI committe for CVPR 2023.</li>
                 <li>Session chair for Image Understanding & Activity Recognition session at IPAS 2020. </li>
                 <li>Mentored for B.E.N.J.I. in GirlScript Summer of Code 2019 edition. </li>
                 <li>Mentor for the Emerging Technology Business Incubator (ETBI) Led by NIT Rourkela, a platform envisaged to transform the start-up ecosystem of the region. </li>
