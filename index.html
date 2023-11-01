@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Srijan Das</name>
               </p>
-              <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision.
+              <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (<a href="https://charlotteml.github.io/">CharMLab</a>) at UNC Charlotte.
               </p>
               <p>
                   Before this, I was a Postdoctoral Associate at Stony Brook University under the supervision of <a href="http://michaelryoo.com/">Michael Ryoo</a>. In 2020, I completed my Ph.D. in Computer Science at INRIA, Sophia Antipolis, France under the supervision of <a href="http://www-sop.inria.fr/members/Francois.Bremond/">Francois Bremond</a> and <a href="http://www-sop.inria.fr/members/Monique.Thonnat/">Monique Thonnat</a>.
@@ -61,6 +61,7 @@
               <heading>News</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b>Oct 2023</b> - One paper accepted to WACV 2024. </li>
                 <li><b>Aug 2023</b> - One paper on DeepFake detection has been accepted at ICCVW 2023, and another paper on using CLIP for Action Detection has been accepted at BMVC 2023.</li>
                 <li><b>Jul 2023</b> - CMMC received the <a href="images/poster_award_mva.JPG"> Best Poster Award </a>a at MVA 2023.</li>
                 <li><b>May 2023</b> - Serving as SPC for AAAI 2024 respectively.</li>
@@ -103,15 +104,16 @@
             <subheading class="lab-member">Current Students</subheading>
 
                 <li><em><a href="https://dominickrei.github.io/">Dominick Reilly</a> (PhD student at UNC Charlotte) </em>
-                <li><em>Arkaprava Sinha (PhD student at UNC Charlotte) </em>
-                <li><em> Rajatsubhra Chakraborty (PhD student at UNC Charlotte) </em>
+              <li><em><a href="https://webpages.charlotte.edu/asinha13/">Arkaprava Sinha</a> (PhD student at UNC Charlotte) </em>
+              <li><em> <a href="https://webpages.charlotte.edu/rchakra6/">Rajatsubhra Chakraborty</a> (PhD student at UNC Charlotte) </em>
                 <li><em>Vishal Bondili (Master student at UNC Charlotte) </em>
-                <li><em>Jonathan Lorray (Master student at UNC Charlotte) </em>
+
               </ul>
                </p>
                 <p style="margin-left: 40px">
               <ul>
                 <subheading class="lab-member">Past Students</subheading>
+                    <li><em>Jonathan Lorray (Master student at UNC Charlotte) </em>
                     <li><em>Jacob Nielsen (jointly supervised with Prof. Aritra Dutta at SDU)</em>
                     <li><em>Ian Boyle (undergraduate at UNC Charlotte), 2022-23 </em>
                     <li><em>Tanmay Jain (intern from DTU, India), 2022-23 </em>
@@ -132,43 +134,48 @@
                 text-decoration: underline; /* add an underline */
                 }
             </style>
-            <subheading class="pub-year">2023</subheading>
+            <subheading class="pub-year">Preprint & 2024</subheading>
           </td>
           </tr>
         <p>
-            <tr onmouseout="paat_stop()" onmouseover="paat_start()" bgcolor="#ffffd0">
+            <tr onmouseout="smalltr_stop()" onmouseover="smalltr_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/paat.png' height=175px width=250px>
+                <img src='images/wacv24.png' height=175px width=250px>
               </div>
               <script type="text/javascript">
-                function paat_start() {
-                  document.getElementById('paat').style.opacity = "1";
+                function smalltr_start() {
+                  document.getElementById('smalltr').style.opacity = "1";
                 }
 
                 function paat_stop() {
-                  document.getElementById('paat_image').style.opacity = "0";
+                  document.getElementById('smalltr_image').style.opacity = "0";
                 }
-                paat_stop()
+                smalltr_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2306.09331.pdf">
-                <papertitle>Seeing the Pose in the Pixels: Learning Pose-Aware Representations in Vision Transformers</papertitle>
+              <a href="https://arxiv.org/abs/2310.20704">
+                <papertitle>Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders</papertitle>
               </a>
               <br>
-              Dominick Reilly, Aman Chadha, <strong>Srijan Das</strong>.
+              <strong>Srijan Das</strong>, Tanmay Jain, Dominick Reilly, Pranav Balaji, Soumyajit Karmakar, Shyam Marjit, Xiang Li, Abhijit Das, and Michael Ryoo.
               <br>
-							<em>Preprint</em>
+							<em>WACV2024</em>
               <br>
-              <a href="https://arxiv.org/pdf/2306.09331.pdf">arXiv</a>
+              <a href="http://arxiv.org/abs/2310.20704">arXiv</a>
                 /
-              <a href="https://github.com/dominickrei/PoseAwareVT">code</a>
+              <a href="https://github.com/dominickrei/Limited-data-vits/">code</a>
               <p></p>
               <p>
-							Two approaches for training ViTs to learn Pose-aware representations, enabling fine-grained and viewpoint-agnostic visual perception.</p>
+						This paper shows that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task is surprisingly beneficial when the amount of training data is limited.</p>
             </td>
           </tr>
+          <tr>
+        <td>
+          <br><subheading class="pub-year">2023</subheading>
+        </td>
+        </tr>
             <tr onmouseout="clipad_stop()" onmouseover="clipad_start()">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -194,7 +201,7 @@
               <br>
                 <em><strong>BMVC 2023</strong></em>
               <br>
-              arXiv
+              <a href="https://arxiv.org/pdf/2306.09331.pdf"> arXiv </a> / <a href="https://youtu.be/PMj-UEZLXzg">video</a>
               <p></p>
               <p>
 					This paper explains how to utilize OpenAI's CLIP for long-term action detection in videos.		</p>
@@ -738,7 +745,7 @@
               <heading>Teaching</heading>
                 <p style="margin-left: 40px">
               <ul>
-                <li><b><em>Fall 2022, Spring 2023</em></b> <a href="data/4152_5152_Syllabus.pdf">ITCS 4152/5152 Computer Vision</a> </li>
+                <li><b><em>Fall 2022, Spring 2023, Fall 2023</em></b> <a href="data/4152_5152_Syllabus.pdf">ITCS 4152/5152 Computer Vision</a> </li>
 
                 <li><b><em>Aug 2021</em></b> &nbsp;&nbsp; Surviving the Deep Learning Apocalypse (SKFGI Webinar series 2020) </li>
                 <p style="margin-left: 80px">
@@ -767,13 +774,13 @@
               <p style="margin-left: 40px">
               <ul>
                 <li>Program committee member of AAAI-24 Student Program.</li>
-                <li>Area Chair for AVSS 2023.</li>
+                <li>Associate Editor for ICRA 2024.</li>
                 <li>Member of DEI committe for CVPR 2023.</li>
-                <li>Senior Program Committee Member for AAAI 2023.</li>
+                <li>Senior Program Committee Member for AAAI 2023 and AAAI 2024.</li>
                 <li>Session chair for Image Understanding & Activity Recognition session at IPAS 2020. </li>
                 <li>Mentored for B.E.N.J.I. in GirlScript Summer of Code 2019 edition. </li>
                 <li>Mentor for the Emerging Technology Business Incubator (ETBI) Led by NIT Rourkela, a platform envisaged to transform the start-up ecosystem of the region. </li>
-                <li>Reviewer at ICACIE 2017, 2018, SETIT 2018, KCST 2019, ICAML 2019, AVSS 2019, 2022, WACV 2020, 2021, 2022, CVPR 2021, 2022, 2023, ECCV 2022, ICCV 2021, 2023, AAAI 2023, NeurIPS 2023, IROS 2021.</li>
+                <li>Reviewer at ICACIE 2017, 2018, SETIT 2018, KCST 2019, ICAML 2019, AVSS 2019, 2022, WACV 2020, 2021, 2022, CVPR 2021, 2022, 2023, 2024 ECCV 2022, ICCV 2021, 2023, AAAI 2023, NeurIPS 2023, IROS 2021.</li>
                 <li>Reviewer at TPAMI, Patter Recognition, Elsevier Journal of CVIU, Elsevier Journal of FGCS, Elsevier Journal of Computer & Electrical Engineering, MTAP, and Journal of Signal Processing: Image Communication. </li>
                 <li>Volunteer at ICACNI 2014, ICACNI 2016, ICCV 2019, ICLR 2020 & ICML 2020. </li>
                 </ul>
