@@ -107,9 +107,9 @@
                 <subheading class="lab-member">Past Students</subheading>
                     <li><em>Vishal Bondili, Jonathan Lorray (Master student at UNC Charlotte) </em>
                     <li><em>Jacob Nielsen (jointly supervised with Prof. Aritra Dutta at SDU)</em>
-                    <li><em>Ian Boyle, <a href="data/URC_Naveen.pdf">Naveen Vellaturi</a>, <a href="data/URC_Sindhu.pdf">Sindhu Gadiraju</a> (undergraduate at UNC Charlotte), 2022-23 </em>
+                    <li><em>Ian Boyle, <a href="data/URC_Naveen.pdf">Naveen Vellaturi</a>, <a href="data/URC_Sindhu.pdf">Sindhu Gadiraju</a> (UG at UNC Charlotte) </em>
                     <li><em>Tanmay Jain (intern from DTU, India), 2022-23 </em>
-                    <li><em>Soumyajit Karmakar, Shyam Marjit (intern from IIIT Guwahati, India), 2022-23 </em>
+                    <li><em>Soumyajit Karmakar, Shyam Marjit (intern from IIIT Guwahati, India) </em>
               </p>
             </td>
               <td style="width:40%;padding:20px;vertical-align:top;">
@@ -167,6 +167,43 @@
               <p></p>
               <p>
                 LLAVIDAL, a Large Language Vision Model, incorporates 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs.
+            </td>
+          </tr>
+          <tr onmouseout="bamm_stop()" onmouseover="bamm_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/BAMM.gif' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function bamm_start() {
+                  document.getElementById('bamm').style.opacity = "1";
+                }
+
+                function llavidal_stop() {
+                  document.getElementById('bamm_image').style.opacity = "0";
+                }
+                bamm_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2406.09390">
+                <papertitle>BAMM: Bidirectional Autoregressive Motion Model</papertitle>
+              </a>
+              <br>
+              Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Pu Wang, Minwoo Lee, <strong>Srijan Das</strong>, Chen Chen.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2403.19435">arXiv</a>
+                /
+              <a href="https://exitudio.github.io/BAMM-page/">website</a>
+              /
+              <a href="https://github.com/exitudio/BAMM/">code</a>
+              <p></p>
+              <p>
+                A novel text-to-motion generation framework. BAMM captures rich and bidirectional dependencies among motion tokens.
             </td>
           </tr>
 
