@@ -207,6 +207,42 @@
             </td>
           </tr>
 
+          <tr onmouseout="mpmc_stop()" onmouseover="mpmc_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/MPMC.png' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function mpmc_start() {
+                  document.getElementById('mpmc').style.opacity = "1";
+                }
+
+                function mpmc_stop() {
+                  document.getElementById('mpmc_image').style.opacity = "0";
+                }
+                mpmc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2407.04036">
+                <papertitle>Beyond Pixels: Semi-Supervised Semantic Segmentation with a Multi-scale Patch-based Multi-Label Classifier</papertitle>
+              </a>
+              <br>
+              Prantik Howlader, <strong>Srijan Das</strong>, Hieu Le, Dimitris Samaras.
+              <br>
+							<em>
+
+                                <strong>ECCV 2024</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2407.04036">arXiv</a>
+                /
+              <a href="https://github.com/prantikbubun/Beyond-Pixels">code</a>
+              <p></p>
+              <p>
+                A novel plug-in module designed for existing semi-supervised segmentation frameworks that offers patch-level supervision.
+            </td>
+          </tr>
+
           <tr onmouseout="bamm_stop()" onmouseover="bamm_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
