@@ -206,6 +206,23 @@
                 Fibottention is a general, efficient, sparse architecture, for approximating self-attention with superlinear complexity that is built upon Fibonacci sequences.
             </td>
           </tr>
+
+          <tr onmouseout="bamm_stop()" onmouseover="bamm_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/BAMM.gif' height=175px width=250px>
+              </div>
+              <script type="text/javascript">
+                function bamm_start() {
+                  document.getElementById('bamm').style.opacity = "1";
+                }
+
+                function llavidal_stop() {
+                  document.getElementById('bamm_image').style.opacity = "0";
+                }
+                bamm_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/pdf/2406.09390">
                 <papertitle>BAMM: Bidirectional Autoregressive Motion Model</papertitle>
