@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../3DTRL/.idea/3DTRL.iml" filepath="$PROJECT_DIR$/../../3DTRL/.idea/3DTRL.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../scripts/CVPR2023/.idea/CVPR2023.iml" filepath="$PROJECT_DIR$/../../scripts/CVPR2023/.idea/CVPR2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../scripts/Ego-Exo/ViFi-CLIP/.idea/ViFi-CLIP.iml" filepath="$PROJECT_DIR$/../../scripts/Ego-Exo/ViFi-CLIP/.idea/ViFi-CLIP.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../scripts/code_iclr/.idea/code_iclr.iml" filepath="$PROJECT_DIR$/../../scripts/code_iclr/.idea/code_iclr.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/website.iml" filepath="$PROJECT_DIR$/.idea/website.iml" />
     </modules>

@@ -171,6 +171,42 @@
             </td>
           </tr>
 
+          <tr onmouseout="freq_stop()" onmouseover="freq_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/FreqMixformer.PNG' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function freq_start() {
+                  document.getElementById('freq').style.opacity = "1";
+                }
+
+                function freq_stop() {
+                  document.getElementById('freq_image').style.opacity = "0";
+                }
+                freq_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2407.12322">
+                <papertitle>Frequency Guidance Matters: Skeletal Action Recognition by Frequency-Aware Mixed Transformer</papertitle>
+              </a>
+              <br>
+              Wenhan Wu, Ce Zheng, Zihao Yang, Chen Chen, <strong>Srijan Das</strong>, Aidong Lu.
+              <br>
+							<em>
+
+                                <strong>ACM MM 2024</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2407.12322">arXiv</a>
+              /
+              <a href="https://github.com/wenhanwu95/FreqMixFormer">code</a>
+              <p></p>
+              <p>
+                 A frequency-aware attention module to unweave skeleton frequency representations for action recognition.
+            </td>
+          </tr>
+
           <tr onmouseout="fibo_stop()" onmouseover="fibo_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -181,7 +217,7 @@
                   document.getElementById('fibo').style.opacity = "1";
                 }
 
-                function llavidal_stop() {
+                function fibo_stop() {
                   document.getElementById('fibo_image').style.opacity = "0";
                 }
                 fibo_stop()
