@@ -99,7 +99,7 @@
             <subheading class="lab-member">Current PhD Students</subheading>
 
                 <li><em><a href="https://dominickrei.github.io/">Dominick Reilly</a>  </em>
-              <li><em><a href="https://webpages.charlotte.edu/asinha13/">Arkaprava Sinha</a>  </em>
+              <li><em><a href="https://thearkaprava.github.io/">Arkaprava Sinha</a>  </em>
               <li><em><a href="https://manishgovind.github.io/">Manish Kumar Govind</a> (co-supervised with <a href="https://webpages.charlotte.edu/pwang13/"> Prof. Pu Wang </a>) </em>
               <li><em><a href="https://westonbond.github.io/website/">Weston Bondurant</a> (co-supervised with <a href="https://cci.charlotte.edu/people/stephanie-schuckers/"> Prof. Stephanie Schuckers </a>) </em>
               </ul>
@@ -177,20 +177,126 @@
             </td>
           </tr>
 
-          <tr onmouseout="gmmhmr_stop()" onmouseover="gmmhmr_start()" >
+          <tr onmouseout="mstemba_stop()" onmouseover="mstemba_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/gmmhmr.gif' height=150px width=300px>
+                <img src='images/MS_Temba.png' height=150px width=300px>
               </div>
               <script type="text/javascript">
-                function gmmhmr_start() {
-                  document.getElementById('gmmhmr').style.opacity = "1";
+                function mstemba_start() {
+                  document.getElementById('mstemba').style.opacity = "1";
+                }
+
+                function mstemba_stop() {
+                  document.getElementById('mstemba_image').style.opacity = "0";
+                }
+                mstemba_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2501.06138">
+                <papertitle>MS-Temba : Multi-Scale Temporal Mamba for Efficient Temporal Action Detection </papertitle>
+              </a>
+              <br>
+              Arkaprava Sinha, Monish Soundar Raj, Pu Wang, Ahmed Helmy, and  <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2501.06138">arXiv</a>
+                /
+              <a href="https://github.com/thearkaprava/MS-Temba">code</a>
+              <p></p>
+              <p>
+                MS-Temba is the first Mamba based architecture for action detection in long untrimmed videos that can be trained/tested on NVIDIA Jetson Nano.
+            </td>
+          </tr>
+
+          <tr onmouseout="egoexo_stop()" onmouseover="egoexo_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/egoexo.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function egoexo_start() {
+                  document.getElementById('egoexo').style.opacity = "1";
+                }
+
+                function egoexo_stop() {
+                  document.getElementById('egoexo_image').style.opacity = "0";
+                }
+                egoexo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2501.05711">
+                <papertitle>From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities</papertitle>
+              </a>
+              <br>
+              Dominick Reilly, Manish Kumar Govind, and <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/2501.05711">arXiv</a>
+              /
+              <a href="https://github.com/dominickrei/EgoExo4ADL">Code</a>
+              <p></p>
+              <p>
+                 We leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos through online ego2exo distillation. </td>
+          </tr>
+
+          <tr onmouseout="skimodels_stop()" onmouseover="skimodels_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/ski_models.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function skimodels_start() {
+                  document.getElementById('skimodels').style.opacity = "1";
+                }
+
+                function skimodels_stop() {
+                  document.getElementById('skimodels_image').style.opacity = "0";
+                }
+                skimodels_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2502.03459">
+                <papertitle>SKI Models: SKeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living</papertitle>
+              </a>
+              <br>
+              Arkaprava Sinha, Dominick Reilly, Francois Bremond, Pu Wang, and <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>AAAI 2025</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/2502.03459">arXiv</a>
+              /
+              <a href="https://github.com/thearkaprava/SKI-Models">Code</a>
+              <p></p>
+              <p>
+                Ski-models introduce 3D skeletons into the vision-language embedding space to enable effective zeroshot learning for ADL. </td>
+          </tr>
+
+          <tr onmouseout="genhmr_stop()" onmouseover="genhmr_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/genhmr.gif' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function genhmr_start() {
+                  document.getElementById('genhmr').style.opacity = "1";
                 }
 
                 function genhmr_stop() {
-                  document.getElementById('gmmhmr_image').style.opacity = "0";
+                  document.getElementById('genhmr_image').style.opacity = "0";
                 }
-                gmmhmr_stop()
+                genhmr_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -237,7 +343,7 @@
               <br>
 							<em>
 
-                                <strong>To Appear in AAAI 2025</strong></em>
+                                <strong>AAAI 2025</strong></em>
               <br>
               <a href="https://arxiv.org/abs/2412.14444">arXiv</a>
               /
