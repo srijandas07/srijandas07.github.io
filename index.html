@@ -141,6 +141,78 @@
           </td>
           </tr>
         <p>
+
+          <tr onmouseout="egoexo_stop()" onmouseover="egoexo_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/egoexo_new.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function egoexo_start() {
+                  document.getElementById('egoexo').style.opacity = "1";
+                }
+
+                function egoexo_stop() {
+                  document.getElementById('egoexo_image').style.opacity = "0";
+                }
+                llavidal_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2501.05711">
+                <papertitle>From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities</papertitle>
+              </a>
+              <br>
+              Dominick Reilly, Manish Kumar Govind, and <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/2501.05711">arXiv</a>
+              /
+              <a href="https://github.com/dominickrei/EgoExo4ADL">Code</a>
+              <p></p>
+              <p>
+                 We leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos through online ego2exo distillation. </td>
+          </tr>
+
+          <tr onmouseout="mstemba_stop()" onmouseover="mstemba_start()">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/MS_Temba_new.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function mstemba_start() {
+                  document.getElementById('mstemba').style.opacity = "1";
+                }
+
+                function mstemba_stop() {
+                  document.getElementById('mstemba_image').style.opacity = "0";
+                }
+                mstemba_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2501.06138">
+                <papertitle>MS-Temba : Multi-Scale Temporal Mamba for Efficient Temporal Action Detection </papertitle>
+              </a>
+              <br>
+              Arkaprava Sinha, Monish Soundar Raj, Pu Wang, Ahmed Helmy, and  <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2501.06138">arXiv</a>
+                /
+              <a href="https://github.com/thearkaprava/MS-Temba">code</a>
+              <p></p>
+              <p>
+                MS-Temba is the first Mamba based architecture for action detection in long untrimmed videos that can be trained/tested on NVIDIA Jetson Nano.
+            </td>
+          </tr>
+
           <tr onmouseout="llavidal_stop()" onmouseover="llavidal_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -177,77 +249,6 @@
               <p>
                 LLAVIDAL, a Large Language Vision Model, incorporates 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs.
             </td>
-          </tr>
-
-          <tr onmouseout="mstemba_stop()" onmouseover="mstemba_start()" bgcolor="#ffffd0">
-            <td style="padding:70px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/MS_Temba.png' height=150px width=300px>
-              </div>
-              <script type="text/javascript">
-                function mstemba_start() {
-                  document.getElementById('mstemba').style.opacity = "1";
-                }
-
-                function mstemba_stop() {
-                  document.getElementById('mstemba_image').style.opacity = "0";
-                }
-                mstemba_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2501.06138">
-                <papertitle>MS-Temba : Multi-Scale Temporal Mamba for Efficient Temporal Action Detection </papertitle>
-              </a>
-              <br>
-              Arkaprava Sinha, Monish Soundar Raj, Pu Wang, Ahmed Helmy, and  <strong>Srijan Das</strong>.
-              <br>
-							<em>
-
-                                <strong>Preprint</strong></em>
-              <br>
-              <a href="https://arxiv.org/abs/2501.06138">arXiv</a>
-                /
-              <a href="https://github.com/thearkaprava/MS-Temba">code</a>
-              <p></p>
-              <p>
-                MS-Temba is the first Mamba based architecture for action detection in long untrimmed videos that can be trained/tested on NVIDIA Jetson Nano.
-            </td>
-          </tr>
-
-          <tr onmouseout="egoexo_stop()" onmouseover="egoexo_start()" >
-            <td style="padding:70px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/egoexo.png' height=150px width=300px>
-              </div>
-              <script type="text/javascript">
-                function egoexo_start() {
-                  document.getElementById('egoexo').style.opacity = "1";
-                }
-
-                function egoexo_stop() {
-                  document.getElementById('egoexo_image').style.opacity = "0";
-                }
-                egoexo_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2501.05711">
-                <papertitle>From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities</papertitle>
-              </a>
-              <br>
-              Dominick Reilly, Manish Kumar Govind, and <strong>Srijan Das</strong>.
-              <br>
-							<em>
-
-                                <strong>Preprint</strong></em>
-              <br>
-              <a href="https://arxiv.org/pdf/2501.05711">arXiv</a>
-              /
-              <a href="https://github.com/dominickrei/EgoExo4ADL">Code</a>
-              <p></p>
-              <p>
-                 We leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos through online ego2exo distillation. </td>
           </tr>
 
           <tr onmouseout="skimodels_stop()" onmouseover="skimodels_start()" >
@@ -1210,6 +1211,7 @@
               <heading>Talks</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b><em>Mar 2025</em></b> &nbsp;&nbsp; Guest Lecture on "Deep Neural Networks" at The University of Michigan-Dearborn.
                 <li><b><em>Mar 2024</em></b> &nbsp;&nbsp; Talk on "Computer Vision Projects in CharMLab" in a RoundTable discussion on AI in conjunction with the Defense Alliance of NC (DANC) and the Michael Best Law Firm.
                 <li><b><em>Feb 2024</em></b> &nbsp;&nbsp; Invited Online Tech Talk on "From Pixels to Robots: Recipes for Vision-Enabled Robot Learning" at Christ University, Bangalore, India.
                 <li><b><em>Dec 2023</em></b> &nbsp;&nbsp; Invited Talk on "Video Understanding using AI" as part of the "AI and ROS for Robotics: Theory and Practice" short-term training program at IIITDM.
@@ -1237,7 +1239,7 @@
                 <p style="margin-left: 40px">
               <ul>
 
-                <li><b><em>Spring 2025</em></b> <a href="data/4152_Syllabus.pdf">ITCS 4152 Introduction to Computer Vision</a> </li>
+                <li><b><em>Spring 2025, Fall 2025</em></b> <a href="data/4152_Syllabus.pdf">ITCS 4152 Introduction to Computer Vision</a> </li>
               <li><b><em>Fall 2024</em></b> <a href="data/6010_8010_Syllabus.pdf">ITCS 6010/8010 Advanced Computer Vision (Topics Course)</a> </li>
                 <li><b><em>Fall 2022, Spring 2023, Fall 2023, Spring 2024</em></b> <a href="data/4152_5152_Syllabus.pdf">ITCS 4152/5152 Computer Vision</a> </li>
 
