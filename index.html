@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Srijan Das</name>
               </p>
-              <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (<a href="https://charlotteml.github.io/">CharMLab</a>) and <a href="https://cws.charlotte.edu/stage-ai4health/">AI4Health Center</a> at UNC Charlotte.
+              <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the  <a href="https://cws.charlotte.edu/stage-ai4health/">AI4Health Center</a> and one of the founding members of the Charlotte Machine Learning Lab (<a href="https://charlotteml.github.io/">CharMLab</a>) at UNC Charlotte.
               </p>
               <p>
                   Before this, I was a Postdoctoral Associate at Stony Brook University under the supervision of <a href="http://michaelryoo.com/">Michael S. Ryoo</a>. In 2020, I completed my Ph.D. in Computer Science at INRIA, Sophia Antipolis, France under the supervision of <a href="http://www-sop.inria.fr/members/Francois.Bremond/">Francois Bremond</a> and <a href="http://www-sop.inria.fr/members/Monique.Thonnat/">Monique Thonnat</a>.
@@ -46,8 +46,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research focuses on video representation learning, utilizing spatio-temporal attention mechanisms, multiple modalities, and both ego-exo centric viewpoints. I am also interested in vision-language models and self-supervised learning techniques. The primary applications of my research include action classification in trimmed videos, temporal action detection in untrimmed videos, video retrieval, robotic vision, and the development of video conversational agents.
-              </p>
+                My research focuses on representation learning in long videos, leveraging vision-language models, multimodal inputs, and both egocentric and exocentric viewpoints. I am also interested in vision-language-action models for robot learning and the use of diffusion models for video generation.
               <p>
                 [<strong>Hiring</strong>]  Please find the <a href="https://docs.google.com/document/d/19VdI9u2MisJX0j5_4zDH8VdqEEFC3HlJCH2AllxtkIw/edit?usp=sharing"> instruction link </a> for potential RA positions and opportunity for students interested in conducting research with me. UNC Charlotte students asking to be my grader or TA, your emails will be ignored. Instead look for the IA application link <a href="https://cci.charlotte.edu/departments/computer-science-cs/cs-academics/masters-programs/ms-funding">here</a>.
               </p>
@@ -61,8 +60,9 @@
               <heading>News</heading>
               <p style="margin-left: 40px">
               <ul>
-                <li><b>Feb 2025</b> - LLAVIDAL is now accepted to CVPR 2025. </li>
-              <li><b>Feb 2025</b> - Secured <a href="images/ear_certificate.png"> 3rd-place </a> in Elderly Action Recognition challenge - WACV 2025. </li>
+                <li><b>Apr 2025</b> - Serving as an Area Chair for NeurIPS 2025. </li>
+                <li><b>Feb 2025</b> - LLAVIDAL is now accepted to CVPR 2025. [<a href="https://inside.charlotte.edu/featured-stories/hey-siri/"> Featured Story </a>] </li>
+                <li><b>Feb 2025</b> - Secured <a href="images/ear_certificate.png"> 3rd-place </a> in Elderly Action Recognition challenge - WACV 2025. </li>
                 <li><b>Dec 2024</b> - 2 papers accepted to AAAI 2025. </li>
                 <li><b>Oct 2024</b> - 3 papers accepted to NeurIPS 2024 workshops. Early version of LLAVIDAL is presented in NeurIPS 2024 workshop on Video-Language Models and Multimodal Algorithmic Reasoning. </li>
                 <li><b>Jul 2024</b> - 2 papers accepted to ECCV 2024 and 1 paper to ACM MM 2024. </li>
@@ -73,7 +73,6 @@
                 <li><b>Jul 2023</b> - CMMC received the <a href="images/poster_award_mva.JPG"> Best Poster Award </a> at MVA 2023.</li>
                 <li><b>May 2023</b> - Serving as SPC at AAAI 2024 for the second time.</li>
                 <li><b>May 2023</b> - Dominick has been selected as a recipient of the Chateaubriand Fellowship. Congratulations!</li>
-                <li><b>Apr 2023</b> - Serving as a member of the DEI committee for CVPR 2023.</li>
                 <li><b>Feb 2023</b> - First NSF Grant has been awarded. [<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245652&HistoricalAwards=false">Link</a>]</li>
                 <li><b>Jan 2023</b> - One paper with colleagues at Stony Brook Medicine is accepted to ISBI 2023.</li>
                 <li><b>Sep 2022</b> - Two papers accepted to NeurIPS 2022.</li>
@@ -137,7 +136,7 @@
                 text-decoration: underline; /* add an underline */
                 }
             </style>
-            <subheading class="pub-year">Preprint & 2025</subheading>
+            <subheading class="pub-year">Preprint</subheading>
           </td>
           </tr>
         <p>
@@ -213,6 +212,45 @@
             </td>
           </tr>
 
+          <tr onmouseout="gmmhmr_stop()" onmouseover="gmmhmr_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/gmmhmr.gif' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function gmmhmr_start() {
+                  document.getElementById('gmmhmr').style.opacity = "1";
+                }
+
+                function genhmr_stop() {
+                  document.getElementById('gmmhmr_image').style.opacity = "0";
+                }
+                gmmhmr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2412.13393">
+                <papertitle>GMMHMR: Generative Masked Modeling for Hand Mesh Recovery</papertitle>
+              </a>
+              <br>
+              Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Mayur Jagdishbhai Patel, Hongfei Xue, Ahmed Helmy, <strong>Srijan Das</strong>, Pu Wang.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2412.13393">arXiv</a>
+              /
+              <a href="https://m-usamasaleem.github.io/publication/MMHMR/mmhmr.html">Website</a>
+              <p></p>
+              <p>
+                A novel generative masked model for hand mesh recovery that synthesizes plausible 3D hand meshes. </td>
+          </tr>
+
+          <td>
+          <br><subheading class="pub-year">2025</subheading>
+        </td>
+
           <tr onmouseout="llavidal_stop()" onmouseover="llavidal_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -284,41 +322,6 @@
               <p></p>
               <p>
                 Ski-models introduce 3D skeletons into the vision-language embedding space to enable effective zeroshot learning for ADL. </td>
-          </tr>
-
-          <tr onmouseout="gmmhmr_stop()" onmouseover="gmmhmr_start()" >
-            <td style="padding:70px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/gmmhmr.gif' height=150px width=300px>
-              </div>
-              <script type="text/javascript">
-                function gmmhmr_start() {
-                  document.getElementById('gmmhmr').style.opacity = "1";
-                }
-
-                function genhmr_stop() {
-                  document.getElementById('gmmhmr_image').style.opacity = "0";
-                }
-                gmmhmr_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2412.13393">
-                <papertitle>GMMHMR: Generative Masked Modeling for Hand Mesh Recovery</papertitle>
-              </a>
-              <br>
-              Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Mayur Jagdishbhai Patel, Hongfei Xue, Ahmed Helmy, <strong>Srijan Das</strong>, Pu Wang.
-              <br>
-							<em>
-
-                                <strong>Preprint</strong></em>
-              <br>
-              <a href="https://arxiv.org/abs/2412.13393">arXiv</a>
-              /
-              <a href="https://m-usamasaleem.github.io/publication/MMHMR/mmhmr.html">Website</a>
-              <p></p>
-              <p>
-                A novel generative masked model for hand mesh recovery that synthesizes plausible 3D hand meshes. </td>
           </tr>
 
           <tr onmouseout="genhmr_stop()" onmouseover="genhmr_start()" >
@@ -425,7 +428,7 @@
               <br>
               <a href="https://arxiv.org/abs/2407.04036">arXiv</a>
                 /
-              <a href="https://github.com/prantikbubun/Beyond-Pixels">code</a>
+              <a href="https://github.com/cvlab-stonybrook/Beyond-Pixels">code</a>
               <p></p>
               <p>
                 A novel plug-in module designed for existing semi-supervised segmentation frameworks that offers patch-level supervision.
@@ -596,8 +599,6 @@
               <em> <strong> Medical Image Analysis (IF 10.9) </strong></em>
               <br>
               <a href="https://arxiv.org/abs/2309.06439">arXiv</a>
-               /
-              code (coming soon)
               <p> A diversity-inducing pretraining technique, tailored to enhance representation learning in digital pathology.</p>
             </td>
           </tr>
@@ -1234,6 +1235,7 @@
               <heading>Academic Activities</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li>Area Chair for NeurIPS 2025.</li>
                 <li>Program committee member of AAAI-24 Student Program.</li>
                 <li>Associate Editor for ICRA 2024.</li>
                 <li>Member of DEI committe for CVPR 2023.</li>
@@ -1241,7 +1243,7 @@
                 <li>Session chair for Image Understanding & Activity Recognition session at IPAS 2020. </li>
                 <li>Mentored for B.E.N.J.I. in GirlScript Summer of Code 2019 edition. </li>
                 <li>Mentor for the Emerging Technology Business Incubator (ETBI) Led by NIT Rourkela, a platform envisaged to transform the start-up ecosystem of the region. </li>
-                <li>Reviewer at ICACIE 2017, 2018, SETIT 2018, KCST 2019, ICAML 2019, AVSS 2019, 2022, WACV 2020, 2021, 2022, CVPR 2021, 2022, 2023, 2024, ECCV 2022, 2024, ICCV 2021, 2023, AAAI 2023, NeurIPS 2023, IROS 2021, 2024.</li>
+                <li>Reviewer at ICACIE 2017, 2018, SETIT 2018, KCST 2019, ICAML 2019, AVSS 2019, 2022, WACV 2020, 2021, 2022, CVPR 2021, 2022, 2023, 2024, 2025, ECCV 2022, 2024, ICCV 2021, 2023, 2025, AAAI 2023, NeurIPS 2023, IROS 2021, 2024.</li>
                 <li>Reviewer at TPAMI, Pattern Recognition, Elsevier Journal of CVIU, Elsevier Journal of FGCS, Elsevier Journal of Computer & Electrical Engineering, MTAP, and Journal of Signal Processing: Image Communication. </li>
                 <li>Volunteer at ICACNI 2014, ICACNI 2016, ICCV 2019, ICLR 2020 & ICML 2020. </li>
                 </ul>
