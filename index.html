@@ -47,9 +47,6 @@
               <heading>Research</heading>
               <p>
                 My research focuses on representation learning in long videos, leveraging vision-language models, multimodal inputs, and both egocentric and exocentric viewpoints. I am also interested in vision-language-action models for robot learning and the use of diffusion models for video generation.
-              <p>
-                [<strong>Hiring</strong>]  Please find the <a href="https://docs.google.com/document/d/19VdI9u2MisJX0j5_4zDH8VdqEEFC3HlJCH2AllxtkIw/edit?usp=sharing"> instruction link </a> for potential RA positions and opportunity for students interested in conducting research with me. UNC Charlotte students asking to be my grader or TA, your emails will be ignored. Instead look for the IA application link <a href="https://cci.charlotte.edu/departments/computer-science-cs/cs-academics/masters-programs/ms-funding">here</a>.
-              </p>
             </td>
           </tr>
         </tbody></table>
@@ -60,6 +57,7 @@
               <heading>News</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b>Jun 2025</b> - 2 papers accepted to ICCV 2025 (Gecko and MaskHand). </li>
                 <li><b>May 2025</b> - Outstanding Reviewer for CVPR 2025. </li>
                 <li><b>May 2025</b> - Our research "<a href="https://www.wsoctv.com/news/local/unc-charlotte-professor-develops-ai-video-tool-monitor-home-safety/FLPQL4EWYNDAPJ3CRRTY7IICVY/">Computer model aims to enhance video technology</a>" highlighting the implications of AI video analysis is aired in WSOC-TV. </li>
                 <li><b>Apr 2025</b> - Serving as an Area Chair for NeurIPS 2025. </li>
@@ -105,19 +103,22 @@
               <li><em><a href="https://thearkaprava.github.io/">Arkaprava Sinha</a>  </em>
               <li><em><a href="https://manishgovind.github.io/">Manish Kumar Govind</a> (co-supervised with <a href="https://webpages.charlotte.edu/pwang13/"> Prof. Pu Wang </a>) </em>
               <li><em><a href="https://westonbond.github.io/website/">Weston Bondurant</a> (co-supervised with <a href="https://cci.charlotte.edu/people/stephanie-schuckers/"> Prof. Stephanie Schuckers </a>) </em>
+              <li><em>Wenhao Chi</em></li>
               </ul>
                </p>
                 <p style="margin-left: 40px">
               <ul>
                 <subheading class="lab-member">Other Current Students</subheading>
-                <li><em><a href="https://monishsoundarraj.com/">Monish Soundar Raj </a> (UG student at UNC Charlotte) </em>
-              <li><em>Jack Douglass (UG student at UNC Charlotte) </em>
+                <li><em>Nitin Chandrasekhar (UG student at UNC Charlotte) </em>
+                <li><em>Drew O’Donnell (UG student at UNC Charlotte) </em>
 
               </ul>
                </p>
                 <p style="margin-left: 40px">
               <ul>
                 <subheading class="lab-member">Past Students</subheading>
+                    <li><em><a href="https://monishsoundarraj.com/">Monish Soundar Raj </a> (UG student at UNC Charlotte) </em>
+                    <li><em>Jack Douglass (UG student at UNC Charlotte) </em>
                     <li><em>Vishal Bondili, Jonathan Lorray (Master student at UNC Charlotte) </em>
                     <li><em>Jacob Nielsen (jointly supervised with Prof. Aritra Dutta at SDU)</em>
                     <li><em>Ian Boyle, <a href="data/URC_Naveen.pdf">Naveen Vellaturi</a>, <a href="data/URC_Sindhu.pdf">Sindhu Gadiraju</a> (UG at UNC Charlotte) </em>
@@ -214,6 +215,41 @@
             </td>
           </tr>
 
+          <tr onmouseout="gecko_stop()" onmouseover="gecko_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/gecko.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function gecko_start() {
+                  document.getElementById('gecko').style.opacity = "1";
+                }
+
+                function genhmr_stop() {
+                  document.getElementById('gecko_image').style.opacity = "0";
+                }
+                gecko_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2504.01009">
+                <papertitle>GECKO: Gigapixel Vision-Concept Contrastive Pretraining in Histopathology</papertitle>
+              </a>
+              <br>
+              Saarthak Kapse, Pushpak Pati, Srikar Yellapragada, <strong> Srijan Das </strong>, Rajarsi R. Gupta, Joel Saltz, Dimitris Samaras, Prateek Prasanna.
+              <br>
+							<em>
+
+                                <strong>To Appear in ICCV 2025</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2504.01009">arXiv</a>
+              /
+              <a href="https://github.com/bmi-imaginelab/GECKO?tab=readme-ov-file">Code</a>
+              <p></p>
+              <p>
+                Gigapixel Vision-Concept Knowledge Contrastive pretraining (GECKO) aligns Whole Slide Images with a Concept Prior for delivering clinically meaningful interpretability. </td>
+          </tr>
+
           <tr onmouseout="gmmhmr_stop()" onmouseover="gmmhmr_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -232,14 +268,14 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2412.13393">
-                <papertitle>GMMHMR: Generative Masked Modeling for Hand Mesh Recovery</papertitle>
+                <papertitle>MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild</papertitle>
               </a>
               <br>
               Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Mayur Jagdishbhai Patel, Hongfei Xue, Ahmed Helmy, <strong>Srijan Das</strong>, Pu Wang.
               <br>
 							<em>
 
-                                <strong>Preprint</strong></em>
+                                <strong>To Appear in ICCV 2025</strong></em>
               <br>
               <a href="https://arxiv.org/abs/2412.13393">arXiv</a>
               /
@@ -278,7 +314,7 @@
               <br>
 							<em>
 
-                                <strong>To Appear in CVPR 2025</strong></em>
+                                <strong>CVPR 2025</strong></em>
               <br>
               <a href="https://arxiv.org/abs/2406.09390">arXiv</a>
                 /
@@ -1179,6 +1215,9 @@
               <heading>Talks</heading>
               <p style="margin-left: 40px">
               <ul>
+                <li><b><em>May 2025</em></b> &nbsp;&nbsp; Invited Talk on "LLAVIDAL: A Large LAnguage VIsion Model for Daily Activities of Living" in the first special WACV 2025 Meetup Series.
+                <li><b><em>May 2025</em></b> &nbsp;&nbsp; Invited Academic Talk on "Improved Reasoning in AI Models for Deepfake Detection" in Martigny Biometrics Workshop co-organised by the European Association for Biometrics (EAB), the Center for Identification Technology Research (CITeR) and the Idiap Research Institute at Idiap in Martigny, Switzerland.
+                <li><b><em>May 2025</em></b> &nbsp;&nbsp; Invited research poster presentation at the Computing Community Consortium (CCC) Computing Futures Symposium in Washington, DC, USA.
                 <li><b><em>Mar 2025</em></b> &nbsp;&nbsp; Guest Lecture on "Deep Neural Networks" at The University of Michigan-Dearborn.
                 <li><b><em>Mar 2024</em></b> &nbsp;&nbsp; Talk on "Computer Vision Projects in CharMLab" in a RoundTable discussion on AI in conjunction with the Defense Alliance of NC (DANC) and the Michael Best Law Firm.
                 <li><b><em>Feb 2024</em></b> &nbsp;&nbsp; Invited Online Tech Talk on "From Pixels to Robots: Recipes for Vision-Enabled Robot Learning" at Christ University, Bangalore, India.
