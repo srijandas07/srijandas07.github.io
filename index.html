@@ -144,33 +144,43 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-  <tbody>
-    <tr>
-      <td style="padding:20px;width:60%;vertical-align:middle;">
-        <section class="section">
-          <h2>Research</h2>
-          <p>
-            My research focuses on representation learning in long videos, leveraging vision-language models,
-            multimodal inputs, and both egocentric and exocentric viewpoints. I am also interested in
-            vision-language-action models for robot learning and the use of diffusion models for video generation.
-          </p>
-        </section>
-      </td>
-      <td style="padding:20px;width:40%;vertical-align:middle;">
-        <video
-          src="images/sample_work.mp4"  <!-- replace with your hosted file path -->
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          style="width:100%;height:auto;border-radius:12px;">
-          Your browser does not support the video tag.
-        </video>
-      </td>
-    </tr>
-  </tbody>
-</table>
+        <style>
+  .research-with-video {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; gap: 24px;
+    padding: 20px;
+  }
+  .research-with-video .text { flex: 1 1 55%; }
+  .research-with-video .media { flex: 1 1 45%; }
+  .research-with-video video {
+    width: 100%; height: auto; border: 0; border-radius: 12px;
+  }
+  @media (max-width: 768px) {
+    .research-with-video { flex-direction: column; }
+  }
+</style>
+
+<section class="research-with-video">
+  <div class="text">
+    <h2>Research</h2>
+    <p>
+      My research focuses on representation learning in long videos, leveraging vision-language models,
+      multimodal inputs, and both egocentric and exocentric viewpoints. I am also interested in
+      vision-language-action models for robot learning and the use of diffusion models for video generation.
+    </p>
+  </div>
+  <div class="media">
+    <video
+      src="images/sample_work.mp4"  <!-- replace with your hosted file path -->
+      controls
+      muted
+      playsinline
+      preload="metadata"
+      poster="images/research-thumb.jpg"> <!-- optional -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
 
        <!-- Previous HTML up to before News section remains unchanged -->
