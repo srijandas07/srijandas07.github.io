@@ -132,7 +132,7 @@
               </p>
               <p style="text-align:center">
                 <a href="mailto:sdas24@charlotte.edu">Email</a> &nbsp/&nbsp
-                <a href="data/srijan_CV_2025.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/Srijan_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="data/srijan-bio.txt">Bio</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=ZDTF5AEAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/srijandas07">Twitter</a> &nbsp/&nbsp
@@ -145,53 +145,46 @@
           </tr>
         </tbody></table>
 <style>
+  /* Only layout behavior; let .section control width/margins so it aligns with "News" */
   .research-with-video {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-
-    /* Stack vertically */
     display: flex;
     flex-direction: column;
-    align-items: stretch;   /* make both blocks same width */
     gap: 24px;
   }
 
+  /* Make text align with other sections (no extra centering or custom width) */
   .research-with-video .text {
-    /* optional: limit line length and center */
-    max-width: 75ch;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
   }
 
+  /* Center the media without shifting the section container */
+  .research-with-video .media {
+    display: flex;
+    justify-content: center;
+  }
   .research-with-video .media img {
-    width: 80%;
+    width: min(800px, 100%);
     height: auto;
     border-radius: 12px;
     display: block;
-    margin: 0 auto;
   }
-
-  /* The row-on-mobile media query is no longer needed */
 </style>
 
-<section class="research-with-video">
+<section class="section research-with-video">
+  <!-- Use the same heading element your other sections use -->
+  <heading>Research</heading>
   <div class="text">
-    <h2>Research</h2>
     <p>
       My research focuses on representation learning in long videos, leveraging vision-language models,
       multimodal inputs, and both egocentric and exocentric viewpoints. I am also interested in
       vision-language-action models for robot learning and the use of diffusion models for video generation.
     </p>
   </div>
-
   <div class="media">
-    <img
-      src="images/sample_work.gif"
-      alt="Research teaser"
-    />
+    <img src="images/sample_work.gif" alt="Research teaser" />
   </div>
 </section>
-
 
 
        <!-- Previous HTML up to before News section remains unchanged -->
@@ -200,6 +193,7 @@
   <heading>News</heading>
   <details open>
     <summary>2025</summary>
+    <div class="news-item"><b>Jun</b>: Interviewed by <a href="https://www.wcnc.com/article/money/business/uptown-charlotte-historic-building-demolition-data-center-court-arcade-project/275-0133e6b3-5d04-481f-9f74-c47f28a83639">WCNC</a> and <a href="https://www.qcnews.com/video/data-center-proposed-in-uptown/11149706">Queens City News</a>  on data center proposals in Charlotte.</div>
     <div class="news-item"><b>Jun</b>: 2 papers accepted to ICCV 2025 (<a href="https://arxiv.org/abs/2504.01009">Gecko</a> and <a href="https://arxiv.org/abs/2412.13393">MaskHand</a>).</div>
     <div class="news-item"><b>May</b>: Outstanding Reviewer for CVPR 2025.</div>
     <div class="news-item"><b>May</b>: Our research <a href="https://www.wsoctv.com/news/local/unc-charlotte-professor-develops-ai-video-tool-monitor-home-safety/FLPQL4EWYNDAPJ3CRRTY7IICVY/">"Computer model aims to enhance video technology"</a> aired on WSOC-TV.</div>
