@@ -256,6 +256,42 @@
           </tr>
         <p>
 
+          <tr onmouseout="viscop_stop()" onmouseover="viscop_start()" bgcolor="#ffffd0">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/viscop.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function viscop_start() {
+                  document.getElementById('viscop').style.opacity = "1";
+                }
+
+                function egoexo_stop() {
+                  document.getElementById('viscop_image').style.opacity = "0";
+                }
+                egoexo_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2501.05711">
+                <papertitle>From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities</papertitle>
+              </a>
+              <br>
+              Dominick Reilly, Manish Kumar Govind, Le Xue, and <strong>Srijan Das</strong>.
+              <br>
+							<em>
+
+                                <strong>Preprint</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2510.13808">arXiv</a>
+              /
+              <a href="https://github.com/dominickrei/VisCoP">Code</a>
+              <p></p>
+              <p>
+                  We introduce Vision Contextualized Probing (VisCoP), which augments the VLM's vision encoder with a compact set of learnable visual probes that enables efficient domain-specific adaptation with minimal modification to pretrained parameters.  </td>
+          </tr>
+
+
           <tr onmouseout="egoexo_stop()" onmouseover="egoexo_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
