@@ -150,8 +150,8 @@
     display: flex; align-items: center; gap: 24px;
     padding: 20px;
   }
-  .research-with-video .text { flex: 1 1 45%; }
-  .research-with-video .media { flex: 1 1 55%; }
+  .research-with-video .text { flex: 1 1 50%; }
+  .research-with-video .media { flex: 1 1 50%; }
   .research-with-video video {
     width: 100%; height: auto; border: 0; border-radius: 12px;
   }
@@ -218,32 +218,61 @@
   </details>
 </section>
 
+  <section class="section lab-wrapper">
+  <h2>Lab members</h2>
 
-           <section class="section">
-  <heading>Lab members</heading>
   <style>
+    .lab-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    /* Two columns: names (flexible) | images (fixed-ish) */
+    .lab-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 1fr) minmax(260px, 420px);
+      gap: 32px;
+      align-items: start; /* top-align both columns */
+    }
+
     .lab-member {
       font-size: 1em;
       text-decoration: underline;
+      display: block;
+      margin: 0 0 8px 0;
     }
-    .lab-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-left: 20px;
-    }
-    .lab-column {
-      flex: 1;
-      min-width: 300px;
-    }
-    .lab-column ul {
-      list-style-type: disc;
+
+    .names ul {
+      list-style: disc;
       padding-left: 20px;
+      margin: 0 0 16px 0;
+    }
+
+    /* Right column: two images stacked */
+    .image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .image-stack img {
+      width: 100%;
+      height: auto;       /* keep aspect ratio */
+      display: block;
+      border-radius: 12px;
+    }
+
+    /* Responsive: stack vertically on narrow screens */
+    @media (max-width: 800px) {
+      .lab-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
-  <div class="lab-columns">
-    <div class="lab-column">
-      <subheading class="lab-member">Current PhD Students</subheading>
+
+  <div class="lab-grid">
+    <!-- LEFT: all names in one column -->
+    <div class="names">
+      <span class="lab-member">Current PhD Students</span>
       <ul>
         <li><em><a href="https://dominickrei.github.io/">Dominick Reilly</a></em></li>
         <li><em><a href="https://thearkaprava.github.io/">Arkaprava Sinha</a></em></li>
@@ -251,15 +280,21 @@
         <li><em><a href="https://westonbond.github.io/website/">Weston Bondurant</a> (co-supervised with <a href="https://cci.charlotte.edu/people/stephanie-schuckers/">Prof. Stephanie Schuckers</a>)</em></li>
         <li><em>Wenhao Chi</em></li>
       </ul>
-    </div>
-    <div class="lab-column">
-      <subheading class="lab-member">Other Current Students</subheading>
+
+      <span class="lab-member">Other Current Students</span>
       <ul>
         <li><em>Nitin Chandrasekhar (UG student at UNC Charlotte)</em></li>
       </ul>
     </div>
+
+    <!-- RIGHT: two images, vertically placed -->
+    <div class="image-stack">
+      <img src="images/team.png" alt="Lab group at event">
+      <img src="images/teleoperation.gif" alt="Students collaborating in the lab">
+    </div>
   </div>
 </section>
+
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><p>
           <section class="section">
