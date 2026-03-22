@@ -296,6 +296,7 @@ details[open] summary::before {
 .lab-wrapper .names li,
 .lab-wrapper .names em,
 .lab-wrapper .names a,
+.lab-wrapper .names *,
 .info-table,
 .info-table td,
 .info-table .section,
@@ -303,6 +304,7 @@ details[open] summary::before {
 .info-table .section li,
 .info-table .section ul,
 .info-table .section ol,
+.info-table .section *,
 .info-table heading,
 .info-table subheading {
   color: var(--ink) !important;
@@ -320,6 +322,8 @@ details[open] summary::before {
 
 .image-stack img {
   width: 100% !important;
+  height: 190px;
+  object-fit: cover;
   background: var(--surface-strong);
 }
 
