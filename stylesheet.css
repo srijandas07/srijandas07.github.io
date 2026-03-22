@@ -216,15 +216,16 @@ papertitle {
   display: block;
   width: min(100%, 320px) !important;
   margin-left: auto;
-  border-radius: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 24px 45px rgba(11, 19, 39, 0.28);
+  border: 0;
+  box-shadow: none;
+  background: transparent;
 }
 
 .section {
   margin: 26px 0;
   padding: 30px 34px;
   border-radius: var(--radius-lg);
+  color: var(--ink);
 }
 
 .research-with-video .text {
@@ -288,6 +289,33 @@ details[open] summary::before {
   color: var(--ink);
   text-decoration: none !important;
   font-weight: 700;
+}
+
+.lab-wrapper,
+.lab-wrapper .names,
+.lab-wrapper .names li,
+.lab-wrapper .names em,
+.lab-wrapper .names a,
+.info-table,
+.info-table td,
+.info-table .section,
+.info-table .section p,
+.info-table .section li,
+.info-table .section ul,
+.info-table .section ol,
+.info-table heading,
+.info-table subheading {
+  color: var(--ink) !important;
+}
+
+.info-table .section a,
+.lab-wrapper .names a {
+  color: var(--accent) !important;
+}
+
+.info-table .section a:hover,
+.lab-wrapper .names a:hover {
+  color: #5e1f19 !important;
 }
 
 .image-stack img {
