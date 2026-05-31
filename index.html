@@ -80,11 +80,11 @@
   <heading>Research</heading>
   <div class="text">
     <p>
-      My research focuses on learning unified representations for long videos, leveraging vision–language models, multimodal inputs (e.g., RGB, language, 3D poses and audio), and both egocentric and exocentric viewpoints. I’m also interested in vision–language–action models for robot learning and in diffusion models for video generation.
+      I develop AI systems that learn from unstructured videos of everyday human activities to understand, model, and assist life in the home. My research focuses on transforming large-scale multimodal observations (video, audio, depth, IMU, and language) into structured representations of human behavior, enabling robots and AI agents to reason about activities, predict future actions, and learn assistive policies.
     </p>
-  </div>
-  <div class="media">
-    <img src="images/sample_work.gif" alt="Research teaser" />
+    <p>
+      My work spans video foundation models, multimodal representation learning, vision-language-action (VLA) models, world models for robotics, and scalable self-supervised learning. I have led the creation of widely used benchmarks such as <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Das_Toyota_Smarthome_Real-World_Activities_of_Daily_Living_ICCV_2019_paper.pdf">Toyota Smarthome</a> and <a href="https://arxiv.org/abs/2312.04548">MAVREC</a>, developed architectures for long-horizon activity understanding and embodied AI, and deployed these systems in real-world environments. The long-term goal is to enable home robots that can learn from human behavior and improve the quality of life, independence, and safety of older adults.
+    </p>
   </div>
 </section>
 
@@ -233,6 +233,79 @@
             <subheading class="pub-year">Preprints</subheading>
           </td>
           </tr>
+          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/WAM_CL.png' height=150px width=300px>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/RGR_CoRL_2026.pdf">
+                <papertitle>World Action Models Enable Continual Imitation Learning with Generative Replays</papertitle>
+              </a>
+              <br>
+              Manish Kumar Govind, Dominick Reilly, Hieu Le, <strong>Srijan Das</strong>.
+              <br>
+							<em><strong>Preprint</strong></em>
+              <br>
+              <a href="data/RGR_CoRL_2026.pdf">PDF</a>
+              <p></p>
+              <p>
+                The first replay-based continual imitation learning framework that leverages the generative capabilities of World Action Models to synthesize replay trajectories without storing real demonstrations from previous tasks.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" bgcolor="#ffffd0">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/TimeProVe.png' height=150px width=300px>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/TimeProVe.pdf">
+                <papertitle>TIMEPROVE: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living</papertitle>
+              </a>
+              <br>
+              Arkaprava Sinha, Dominick Reilly, Siddharth Krishnan, Hieu Le, <strong>Srijan Das</strong>.
+              <br>
+							<em><strong>Preprint</strong></em>
+              <br>
+              <a href="data/TimeProVe.pdf">PDF</a>
+              /
+              <a href="https://thearkaprava.github.io/timeprove/">website</a>
+              <p></p>
+              <p>
+                TIMEPROVE is a hybrid long-video reasoning framework that generates action-grounded hypotheses efficiently and verifies only sparse RGB evidence using an expensive VLM.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/Uniego.png' height=150px width=300px>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/UniEgo_arxiv.pdf">
+                <papertitle>UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning</papertitle>
+              </a>
+              <br>
+              Wenhao Chi, Arkaprava Sinha, Dominick Reilly, Hieu Le, <strong>Srijan Das</strong>.
+              <br>
+							<em><strong>Preprint</strong></em>
+              <br>
+              <a href="data/UniEgo_arxiv.pdf">PDF</a>
+              /
+              <a href="https://github.com/Wenhao-Chi/UNIEGO">code</a>
+              <p></p>
+              <p>
+                UNIEGO is a unified egocentric encoder trained via hierarchical distillation across ego-exo viewpoints, modalities, and foundation models, using representation-specific proxies as structured mediators.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1510,7 +1583,7 @@
 
   </div>
           <footer class="site-footer">
-    © 2026 Srijan Das. Last updated: March 2026. &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://jonbarron.info/">Theme Credit</a>
+    © 2026 Srijan Das. Last updated: May 2026. &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://jonbarron.info/">Theme Credit</a>
   </footer>
 
 </body>
