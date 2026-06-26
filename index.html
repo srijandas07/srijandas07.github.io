@@ -240,19 +240,21 @@
           <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/WAM_CL.png' height=150px width=300px>
+                <img src='images/REGEN-TEASER-VIDEO.gif' height=150px width=300px>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/RGR_CoRL_2026.pdf">
-                <papertitle>World Action Models Enable Continual Imitation Learning with Generative Replays</papertitle>
+              <a href="https://arxiv.org/html/2606.27374v1">
+                <papertitle>World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays</papertitle>
               </a>
               <br>
-              Manish Kumar Govind, Dominick Reilly, Hieu Le, <strong>Srijan Das</strong>.
+              Manish Kumar Govind, Dominick Reilly, Smit Patel, Hieu Le, <strong>Srijan Das</strong>.
               <br>
 							<em><strong>Preprint</strong></em>
               <br>
-              <a href="data/RGR_CoRL_2026.pdf">PDF</a>
+              <a href="https://arxiv.org/html/2606.27374v1">arXiv</a>
+              /
+              <a href="https://manishgovind.github.io/REGEN/">website</a>
               <p></p>
               <p>
                 The first replay-based continual imitation learning framework that leverages the generative capabilities of World Action Models to synthesize replay trajectories without storing real demonstrations from previous tasks.
@@ -419,6 +421,43 @@
               <p></p>
               <p>
                  We leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos through online ego2exo distillation. </td>
+          </tr>
+
+          <tr onmouseout="dna_stop()" onmouseover="dna_start()" bgcolor="#ffffd0">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/DnA.png' height=150px width=300px>
+              </div>
+              <script type="text/javascript">
+                function dna_start() {
+                  document.getElementById('dna').style.opacity = "1";
+                }
+
+                function dna_stop() {
+                  document.getElementById('dna_image').style.opacity = "0";
+                }
+                dna_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2606.27372">
+                <papertitle>DnA: Denoising Attention for Visual Tasks</papertitle>
+              </a>
+              <br>
+              Ron Campos, Subhajit Maity, Xin Li, <strong>Srijan Das</strong>, Aritra Dutta.
+              <br>
+							<em>
+
+                                <strong>To Appear in ECCV 2026</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2606.27372">arXiv</a>
+              /
+              <a href="https://rjccv.github.io/DnA">website</a>
+              <p></p>
+              <p>
+                DnA introduces denoising attention to improve discriminability in visual tasks by separating relevant and irrelevant features into distinct interacting subspaces.
+              </p>
+            </td>
           </tr>
 
           <tr onmouseout="mstemba_stop()" onmouseover="mstemba_start()">
