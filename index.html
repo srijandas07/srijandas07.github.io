@@ -85,9 +85,6 @@
     <p>
       I develop AI systems that learn from unstructured daily-life videos and multimodal sensory data to understand human activities, predict future actions, and enable intelligent robotic assistance. My research combines video foundation models, multimodal representation learning, vision-language-action (VLA) models, world models, and scalable self-supervised learning to transform real-world observations into actionable knowledge for AI agents and robots.
     </p>
-    <p>
-      I have created widely used benchmarks such as <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Das_Toyota_Smarthome_Real-World_Activities_of_Daily_Living_ICCV_2019_paper.pdf">Toyota Smarthome</a> and <a href="https://arxiv.org/abs/2312.04548">MAVREC</a>, developed methods for long-horizon activity understanding and embodied AI, and deployed these systems in real-world settings. My long-term vision is to build home robots that learn from human behavior and enhance the independence, safety, and quality of life of older adults.
-    </p>
   </div>
 </section>
 
@@ -237,7 +234,7 @@
             <subheading class="pub-year">Preprints</subheading>
           </td>
           </tr>
-          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
+          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/REGEN-TEASER-VIDEO.gif' height=150px width=300px>
@@ -262,7 +259,7 @@
             </td>
           </tr>
 
-          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" bgcolor="#ffffd0">
+          <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/TimeProVe.png' height=150px width=300px>
@@ -406,7 +403,7 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2501.05711">
-                <papertitle>From My View to Yours: Ego-to-Exo Transfer in VLMs for Understanding Activities of Daily Living</papertitle>
+                <papertitle>From My View to Yours: Learning Egocentric Cues from Exocentric Video using Privileged Egocentric Supervision</papertitle>
               </a>
               <br>
               Dominick Reilly, Manish Kumar Govind, Le Xue, and <strong>Srijan Das</strong>.
@@ -423,7 +420,46 @@
                  We leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos through online ego2exo distillation. </td>
           </tr>
 
-          <tr onmouseout="dna_stop()" onmouseover="dna_start()" bgcolor="#ffffd0">
+          <tr onmouseout="faceshell_stop()" onmouseover="faceshell_start()" bgcolor="#ffffd0">
+            <td style="padding:70px;width:25%;vertical-align:middle">
+              <div class="one">
+                <video autoplay loop muted playsinline height="150" width="300">
+                  <source src="images/faceshell.mp4" type="video/mp4">
+                </video>
+              </div>
+              <script type="text/javascript">
+                function faceshell_start() {
+                  document.getElementById('faceshell').style.opacity = "1";
+                }
+
+                function faceshell_stop() {
+                  document.getElementById('faceshell_image').style.opacity = "0";
+                }
+                faceshell_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2607.16280">
+                <papertitle>3D FaceShell: Attribute Transfer in 3D Face Avatars as a VLM Defense Mechanism</papertitle>
+              </a>
+              <br>
+              Weston Bondurant, <strong>Srijan Das</strong>, Hieu Le, Stephanie Schuckers.
+              <br>
+							<em>
+
+                                <strong>To Appear in ECCV 2026</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2607.16280">arXiv</a>
+              /
+              <a href="https://westonbond.github.io/3DFS/">website</a>
+              <p></p>
+              <p>
+                3D FaceShell is a privacy-preserving framework that manipulates how vision-language models interpret 3D face avatars while preserving facial identity and visual realism.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="dna_stop()" onmouseover="dna_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/DnA.png' height=150px width=300px>
