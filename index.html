@@ -262,7 +262,9 @@
           <tr onmouseout="unilact_stop()" onmouseover="unilact_start()" >
             <td style="padding:70px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='images/TimeProVe.png' height=150px width=300px>
+                <video autoplay loop muted playsinline height="150" width="300">
+                  <source src="images/TimeProVe_demo_video.mp4" type="video/mp4">
+                </video>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -422,11 +424,11 @@
 
           <tr onmouseout="faceshell_stop()" onmouseover="faceshell_start()" bgcolor="#ffffd0">
             <td style="padding:70px;width:25%;vertical-align:middle">
-              <div class="one" style="width:300px;height:auto;display:flex;gap:8px;">
+              <div class="one" style="width:300px;height:auto;display:flex;gap:0;">
                 <video autoplay loop muted playsinline height="150" width="146">
                   <source src="images/faceshell_left.mp4" type="video/mp4">
                 </video>
-                <video autoplay loop muted playsinline height="150" width="146">
+                <video autoplay loop muted playsinline height="150" width="146" style="margin-left:-2px;">
                   <source src="images/faceshell_right.mp4" type="video/mp4">
                 </video>
               </div>
